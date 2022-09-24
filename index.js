@@ -26,7 +26,8 @@ http.createServer((req, res) => {
             if(err){
                 console.log(err);
             }else{
-                res.end("<h1>404 : Page not found</h1>");
+                res.end(data);
+                res.end();
             }
         })
     }
